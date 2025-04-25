@@ -1,0 +1,17 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+// The request body is provided in place
+POST http://127.0.0.1:8000
+Content-Type: application/json
+Cookie: key=first-value
+
+{ "val1" : "foo", "val2": ["b", "a", "r"] }
